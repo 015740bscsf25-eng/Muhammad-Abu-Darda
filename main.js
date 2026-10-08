@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".nav-toggle").forEach((toggle) => {
     const shell = toggle.closest(".nav-shell");
+    if (!shell) return;
+
     toggle.addEventListener("click", () => {
       const isOpen = shell.classList.toggle("menu-open");
       toggle.setAttribute("aria-expanded", String(isOpen));
@@ -80,16 +82,21 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-cert-image]").forEach((trigger) => {
     trigger.addEventListener("click", () => openModal(trigger));
   });
-  document.querySelector("[data-modal-close]")?.addEventListener("click", closeModal);
-  fullscreenButton?.addEventListener("click", () => {
-    if (modalImage?.requestFullscreen) modalImage.requestFullscreen();
-  });
-  modal?.addEventListener("click", (event) => {
-    if (event.target === modal) closeModal();
-  });
+  const modalCloseButton = document.querySelector("[data-modal-close]");
+  if (modalCloseButton) modalCloseButton.addEventListener("click", closeModal);
+  if (fullscreenButton) {
+    fullscreenButton.addEventListener("click", () => {
+      if (modalImage && modalImage.requestFullscreen) modalImage.requestFullscreen();
+    });
+  }
+  if (modal) {
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeModal();
+    });
+  }
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && modal?.classList.contains("is-open")) closeModal();
-    if (event.key === "Tab" && modal?.classList.contains("is-open")) {
+    if (event.key === "Escape" && modal && modal.classList.contains("is-open")) closeModal();
+    if (event.key === "Tab" && modal && modal.classList.contains("is-open")) {
       const focusable = modal.querySelectorAll("button, img");
       if (focusable.length && event.target === focusable[focusable.length - 1] && !event.shiftKey) {
         event.preventDefault();
