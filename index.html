@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Muhammad Abu Darda — Data Analyst and Web Developer portfolio.">
+  <meta name="description" content="Muhammad Abu Darda — Data Analyst and Web Developer portfolio showcasing projects, certifications, and technical expertise.">
+  <meta name="theme-color" content="#06b6d4">
+  <meta property="og:title" content="Muhammad Abu Darda | Data Analyst & Web Developer">
+  <meta property="og:description" content="Portfolio showcasing data analytics projects, certifications, and web development work.">
+  <meta property="og:type" content="website">
   <title>Muhammad Abu Darda | Data Analyst & Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
   <a class="skip-link" href="#main-content">Skip to content</a>
+
   <nav class="navbar" aria-label="Primary navigation">
     <div class="container nav-shell">
       <a href="index.html" class="logo" aria-label="Abu Darda home">Abu<span>Darda</span>.</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav-links" id="primary-menu">
         <li><a class="active" href="index.html" aria-current="page">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -29,7 +36,13 @@
         <div class="hero-text">
           <span class="badge">Welcome to my portfolio</span>
           <h1>Hi, I'm <span class="gradient-text">Muhammad Abu Darda</span></h1>
-          <p>Computer Science student at <strong>International Islamic University Islamabad (IIUI)</strong>, with foundational ICS from <strong>Cadet College Mohmand</strong>. Experienced professional data analyst and freelancer with hands-on expertise managing real estate client data and operations for private companies like EON Revolution. Skilled in advanced SQL, Power BI, and Microsoft Excel, ready for new career opportunities and impactful freelance projects.</p>
+          <p>
+            Computer Science student at <strong>International Islamic University Islamabad (IIUI)</strong>,
+            with foundational ICS from <strong>Cadet College Mohmand</strong>. Data analyst and freelancer
+            with hands-on experience managing real estate client data and operations for companies
+            like <strong>EON Revolution</strong>. Skilled in SQL, Power BI, Python, and Microsoft Excel —
+            driven to turn raw data into clear, actionable insights.
+          </p>
           <div class="hero-actions">
             <a href="projects.html" class="btn btn-primary">View Projects</a>
             <a href="certificate.html" class="btn btn-outline">My Certificates</a>
@@ -39,28 +52,65 @@
           <div class="profile-orbit" aria-label="Profile image with technology badges">
             <span class="orbit-badge">🐍 Python</span>
             <span class="orbit-badge">▣ SQL</span>
-            <span class="orbit-badge">⚛ React</span>
+            <span class="orbit-badge">📊 Power BI</span>
             <span class="orbit-badge">⌘ JavaScript</span>
-            <span class="orbit-badge">▤ Charts</span>
+            <span class="orbit-badge">▤ Excel</span>
             <div class="profile-img-container">
-              <img src="profile-pic.jpeg" alt="Portrait of Muhammad Abu Darda" width="600" height="600">
+              <img src="assets/profile-pic.jpeg" alt="Portrait of Muhammad Abu Darda" width="600" height="600">
             </div>
           </div>
         </div>
       </div>
     </header>
+
     <section class="container" aria-labelledby="expertise-title">
       <h2 id="expertise-title" class="section-heading">Core Expertise</h2>
       <div class="grid-2">
         <article class="card">
           <span class="badge">Analytics</span>
           <h3>Data Analyst</h3>
-          <p class="card-desc">Extensive hands-on experience in data cleaning, exploratory analysis, complex SQL queries, and managing real estate datasets for corporate clients like EON Revolution. Proficient in building interactive Power BI and Excel dashboards to drive data-informed decisions.</p>
+          <p class="card-desc">
+            Hands-on experience in data cleaning, exploratory analysis, and complex SQL queries.
+            Proficient in building interactive Power BI and Excel dashboards that drive
+            data-informed decisions for corporate clients.
+          </p>
         </article>
         <article class="card">
           <span class="badge badge-indigo">Development</span>
           <h3>Web Developer</h3>
-          <p class="card-desc">Responsive, performant, and scalable interfaces using modern HTML, CSS, JavaScript, and backend APIs.</p>
+          <p class="card-desc">
+            Responsive, performant, and scalable interfaces using modern HTML, CSS,
+            JavaScript, and backend APIs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-heading">Get in Touch</h2>
+      <div class="grid-2">
+        <article class="card">
+          <span class="badge">Available for work</span>
+          <h3>Let's Collaborate</h3>
+          <p class="card-desc">
+            Whether you need data analysis, dashboard development, or a web application built
+            from scratch — I'd love to hear about your project.
+          </p>
+          <div class="card-actions" style="margin-top:1.25rem">
+            <a href="mailto:m.a.darda4250@gmail.com" class="btn btn-primary">Send an Email</a>
+            <a href="https://www.linkedin.com/in/muhammad-abu-darda-8aaa513ba" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn Profile</a>
+          </div>
+        </article>
+        <article class="card">
+          <span class="badge badge-indigo">Location</span>
+          <h3>Based in Islamabad, Pakistan</h3>
+          <p class="card-desc">
+            Open to remote freelance engagements and on-site opportunities.
+          </p>
+          <p class="card-desc" style="margin-top:.75rem">
+            <strong>Email:</strong> <a href="mailto:m.a.darda4250@gmail.com" style="color:var(--accent-cyan-bright)">m.a.darda4250@gmail.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+923038875694" style="color:var(--accent-cyan-bright)">+92 303 8875694</a>
+          </p>
         </article>
       </div>
     </section>
@@ -68,13 +118,39 @@
 
   <footer>
     <div class="container footer-main">
-      <div class="footer-brand"><a href="index.html" class="logo">Abu<span>Darda</span>.</a><p>Data Analyst & Web Developer from IIUI and Cadet College Mohmand, focused on turning ideas into useful digital products.</p></div>
-      <div class="footer-column"><h2 class="footer-heading">Quick Links</h2><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="certificate.html">Certificates</a></li><li><a href="blogs.html">Blogs & Videos</a></li></ul></div>
-      <div class="footer-column"><h2 class="footer-heading">Contact</h2><p>Islamabad, Pakistan</p><p><a href="mailto:m.a.darda4250@gmail.com">m.a.darda4250@gmail.com</a></p><p><a href="tel:+923038875694">+92 303 8875694</a></p></div>
-      <div class="footer-column"><h2 class="footer-heading">Social Profiles</h2><div class="social-links"><a href="https://github.com/015740bscsf25-eng" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/in/muhammad-abu-darda-8aaa513ba" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a><a href="https://www.youtube.com/channel/UCCSNqaHJaCHso8sao17lueQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter X">X</a><a href="#" aria-label="Daraz or portfolio link">DZ</a></div></div>
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Abu<span>Darda</span>.</a>
+        <p>Data Analyst & Web Developer from IIUI, focused on turning raw data into clear, actionable insights.</p>
+      </div>
+      <div class="footer-column">
+        <h2 class="footer-heading">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certificate.html">Certificates</a></li>
+          <li><a href="blogs.html">Blogs & Videos</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2 class="footer-heading">Contact</h2>
+        <p>Islamabad, Pakistan</p>
+        <p><a href="mailto:m.a.darda4250@gmail.com">m.a.darda4250@gmail.com</a></p>
+        <p><a href="tel:+923038875694">+92 303 8875694</a></p>
+      </div>
+      <div class="footer-column">
+        <h2 class="footer-heading">Social Profiles</h2>
+        <div class="social-links">
+          <a href="https://github.com/015740bscsf25-eng" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/muhammad-abu-darda-8aaa513ba" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
     </div>
-    <div class="container footer-bottom"><p>&copy; 2026 Muhammad Abu Darda. All rights reserved. Privacy and terms apply.</p><a class="back-to-top" href="#top">Back to top ↑</a></div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Muhammad Abu Darda. All rights reserved.</p>
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
